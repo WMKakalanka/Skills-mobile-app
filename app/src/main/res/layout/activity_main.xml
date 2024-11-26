@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Full-Screen Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_image"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background Image" />
+
+
+    <!-- Logo ImageView at the top -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp" />
+
+
+
+
+    <!-- Second Line of Text with Highlight -->
+    <TextView
+        android:id="@+id/welcome_text_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="WELCOME"
+        android:textSize="34sp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/welcome_text_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text_line1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Exchange skills, expand knowledge, and connect with passionate learners and experts worldwide on Skills Exchanger."
+        android:textSize="18sp"
+        android:textColor="@color/light_gray"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp" />
+
+
+    <!-- 'Get Started' Button -->
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_border"
+        android:textColor="@color/white"/>
+</RelativeLayout>

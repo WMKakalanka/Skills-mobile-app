@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <ripple android:color="@color/background_same_color">
+            <item>
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                    <!-- Outer stroke for border -->
+                    <stroke android:width="2dp" android:color="@color/background_same_color" />
+                    <corners android:radius="12dp" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</selector>
